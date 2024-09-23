@@ -1,0 +1,306 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(fonts/Roboto-Italic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 127px;
+    padding-right: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Roboto-Medium;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.41px;
+    text-align: left;    
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    font-family: Roboto-Medium;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* head start */
+
+.head {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: flex;
+    gap: 10px;
+    background: rgba(19, 101, 1, 1);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.head p {
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-weight: lighter;
+}
+
+/* head end */
+
+
+/* header start */
+
+
+header {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    list-style: none;
+}
+
+header nav .navbar li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav .navbar a {
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-align: center;
+    color: rgba(19, 101, 1, 1);
+}
+
+/* header end */
+
+
+/* homeSwiper start */
+
+.home-swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-swiper-slide {
+    width: 100%;
+    height: 100%;
+    background: url(images/back-view-doctor-holding-blood-sample1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.home-swiper-slide > div  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-swiper-slide > div > h2 {
+    font-family: Roboto-Light;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33.89px;
+    text-align: center;
+}
+
+.home-swiper-item {
+    min-width: 800px;
+    align-self: flex-end;
+    width: fit-content;
+    padding: 20px 75px 20px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.home-swiper-item h2 {
+    font-family: Roboto-Medium;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.09px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.home-swiper-item ul {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-swiper-item ul li {
+    font-family: Roboto-Light;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.home-swiper-item button.btn-green {
+    font-size: 32px;
+    padding: 9px 78px 15px 30px;  
+    border-radius: 20px;
+}
+
+button.btn-green {
+    width: fit-content;
+    font-family: Roboto-Bold;
+    font-weight: 700;
+    background: rgba(19, 101, 1, 1);
+    border-radius: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    padding: 13px 7.5px;
+    border-radius: 10px;
+}
+
+.home-swiper-item span {
+    font-family: Roboto-Light;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    text-align: left;
+}
+
+/* homeSwiper end */
+
+/* popular-tests start */
+
+.popular-tests {
+    padding-top: 35px;
+    padding-bottom: 60px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: flex-start;
+}
+
+.test-item {
+    width: fit-content;
+    padding: 35px 20px;
+    background: rgba(226, 223, 223, 1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.test-item > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.test-item h3 {
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.swiper2 {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    overflow: hidden;
+}
+
+.search-test {
+    max-height: 80px;
+    width: 100%;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: rgba(19, 101, 1, 0.4);
+    border-radius: 20px;
+}
+
+.search-test img {
+    cursor: pointer;
+}
+
+.search-test input {
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-family: Roboto-Light;
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.search-test input::placeholder {
+    font-family: Roboto-Light;
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* popular-tests end */
