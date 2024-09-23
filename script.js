@@ -16,3 +16,12 @@ const swiper2 = new Swiper('.swiper2', {
         nextEl: '.swiper-button-next1',
       },
 });
+
+const swiper3 = new Swiper('.swiper3', {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next2',
+      },
+});

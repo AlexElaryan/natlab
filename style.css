@@ -24,6 +24,10 @@
     box-sizing: border-box;
 }
 
+.swiper {
+    overflow: hidden;
+}
+
 .container {
     padding-left: 127px;
     padding-right: 100px;
@@ -124,12 +128,10 @@ header nav .navbar a {
 
 /* header end */
 
-
 /* homeSwiper start */
 
 .home-swiper {
     width: 100%;
-    overflow: hidden;
 }
 
 .home-swiper-slide {
@@ -221,6 +223,29 @@ button.btn-green {
     text-align: left;
 }
 
+.swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 127px;
+}
+
+.swiper-button-next {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    right: 120px;
+
+}
+
+.swiper-button-next::after , .swiper-button-prev::after {
+    display: none;
+}
+
 /* homeSwiper end */
 
 /* popular-tests start */
@@ -234,15 +259,18 @@ button.btn-green {
     flex-direction: column;
     gap: 35px;
     align-items: flex-start;
+    position: relative;
 }
 
 .test-item {
     width: fit-content;
+    height: 100%;
     padding: 35px 20px;
     background: rgba(226, 223, 223, 1);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 26px;
 }
 
@@ -261,12 +289,20 @@ button.btn-green {
     text-align: left;
 }
 
-.swiper2 {
+.popular-tests .swiper2 {
+    width: 100%;
+    width: calc(100% - 80px);
+}
+
+.popular-tests .swiper-wrapper {
     width: 100%;
 }
 
-.swiper-wrapper {
-    overflow: hidden;
+.for_test_swiper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .search-test {
@@ -303,4 +339,70 @@ button.btn-green {
     color: #fff;
 }
 
+.test-swiper-button-next {
+    cursor: pointer;
+}
+
+.complex-research .test-item {
+    height: 190px;
+}
+
 /* popular-tests end */
+
+/* home-about start */
+
+.home-about {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: url(images/labBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.home-about::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(19, 101, 1, 0.7);
+}
+
+.home-about-item {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.home-about span {
+    font-family: Roboto-Light;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.home-about h3 {
+    font-family: Roboto-Bold;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.home-about img {
+    max-width: 100px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+/* home-about end */
