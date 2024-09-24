@@ -144,3 +144,17 @@ burgerBtn.onclick = () => {
     burgerIsOpen = false;
   }
 }
+
+let navbarLabPlus = document.querySelector('.navbar-lab-plus');
+let navbarLabMobileBox = document.querySelector('.mobileNavbarLab');
+let navblmbIsOpen = false;
+ 
+navbarLabPlus.onclick = () => {
+  if (!navblmbIsOpen) {
+    navbarLabMobileBox.style.display = 'flex';
+    navblmbIsOpen = true;
+  } else if (navblmbIsOpen) {
+    navbarLabMobileBox.style.display = 'none'
+    navblmbIsOpen = false;
+  }
+}

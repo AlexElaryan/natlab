@@ -147,8 +147,10 @@ header nav .navbar > li:hover > a {
     list-style: none;
 }
 
-.navbar-lab:hover ul {
-    display: flex;
+@media screen and (min-width:550px) {
+    .navbar-lab:hover ul {
+        display: flex;
+    }
 }
 
 .navbar-lab ul li a {
