@@ -1225,6 +1225,8 @@ footer ul {
         display: none;
     }
     .navbar-lab > div img {
+        width: 25px;
+        object-fit: cover;
         cursor: pointer;
     }
     .navbar-lab > ul {
