@@ -64,7 +64,7 @@ p {
     justify-content: space-between;
 }
 
-.head > div > div {
+.head > div > a {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -186,12 +186,18 @@ header nav .navbar > li:hover > a {
 
 .home-swiper-slide {
     width: 100%;
-    height: 100%;
-    background: url(images/back-view-doctor-holding-blood-sample1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-top: 40px;
     padding-bottom: 30px;
+}
+
+.home-slide-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
 }
 
 .home-swiper-slide > div  {
@@ -927,6 +933,76 @@ footer ul {
     transition: .2s;
 }
 
+/* biochemical-complex start */
+
+.biochemical-complex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+.biochemical-complex h2 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+
+.biochemical-complex ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.biochemical-complex span {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
+.biochemical-complex span span {
+    font-weight: 700;
+}
+
+.biochemical-complex ul li {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;    
+}
+
+.biochemical-complex h3 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(117, 117, 117, 1);    
+}
+
+.biocomplex-block {
+    display: flex;
+    gap: 23px;
+}
+
+.biocomplex-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.biocomplex-block > img {
+    margin-top: 50px;
+    max-width: 450px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* biochemical-complex end */
+
 
 
 
@@ -954,7 +1030,7 @@ footer ul {
     p {
         font-size: 14px;
     }
-    .head > div > div {
+    .head > div > a {
         gap: 5px;
     }
     .head > div {
@@ -969,6 +1045,9 @@ footer ul {
     .home-about {
         gap: 40px;
     }
+    .biochemical-complex span {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:1210px) {
@@ -978,6 +1057,9 @@ footer ul {
 }
 
 @media screen and (max-width:1200px) {
+    .biochemical-complex h3 {
+        font-size: 13px;
+    }
     .container {
         padding-left: 65px;
         padding-right: 65px;
@@ -1069,6 +1151,10 @@ footer ul {
     }
     p {
         font-size: 12px;
+    }
+    .biocomplex-block > img {
+        max-width: 300px;
+        max-height: 200px;
     }
 }
 
@@ -1196,6 +1282,24 @@ footer ul {
 }
 
 @media screen and (max-width:840px) {
+    .biocomplex-block > img {
+        display: none;
+    }
+    .biocomplex-left {
+        width: 100%;
+    }
+    .biochemical-complex h2 {
+        font-size: 12px;
+    }
+    .biochemical-complex ul li {
+        font-size: 21px;
+    }
+    .biochemical-complex span {
+        font-size: 12px;
+    }
+    .biochemical-complex h3 {
+        font-size: 10px;
+    }
     p {
         font-size: 10px;
     }
@@ -1420,7 +1524,7 @@ footer ul {
     .head p {
         display: none;
     }
-    .head > img:last-of-type {
+    .head > a:last-of-type img {
         display: none;
     }
     .logo {
