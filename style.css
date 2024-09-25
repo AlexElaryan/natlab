@@ -68,6 +68,11 @@ p {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: .2s;
+}
+
+.head > div > a:hover {
+    opacity: .7;
 }
 
 .head p {
