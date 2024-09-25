@@ -130,7 +130,21 @@ header nav .navbar > li:hover > a {
 
 .navbar-lab {
     position: relative;
+    padding-right: 30px;
     height: 70px;
+}
+
+.navbar-lab::after {
+    content: '';
+    width: 20px;
+    height: 11px;
+    background-image: url(images/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .navbar-lab > ul {
@@ -678,9 +692,245 @@ footer ul {
     display: none;
 }
 
+/* file location start */
+
+.site-location {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.site-location a {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(117, 117, 117, 1);    
+}
+
+
+/* file location end */
+
+/* sales start */
+
+.sales {
+    padding-bottom: 135px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.sales-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    row-gap: 80px;
+}
+
+.sales-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(226, 223, 223, 1);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.sales-item > img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.sales-item-bottom {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.sales-item h2 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sales-item h3 {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(19, 101, 1, 1);    
+}
+
+.sales-item h4 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;    
+    color: rgba(117, 117, 117, 1);
+}
+
+.sales-item span {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 20px;
+}
+
+.sales-item button {
+    margin-top: 10px;
+}
+
+
+/* sales end */
+
+
+
+/* phone start */
+
+.phone-block {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    width: 100%;
+    padding: 20px 60px;
+    border-radius: 20px;
+    background: rgba(217, 217, 217, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.phone h1 {
+    max-width: 800px;
+    text-align: center;
+}
+
+.phone h2 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(19, 101, 1, 1);
+    text-align: center;    
+}
+
+.phone-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    gap: 19px;
+}
+
+.phone-input input {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+.phone-input input , .phone-input input::placeholder {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 200;
+    color: rgba(117, 117, 117, 1);    
+}
+
+.phone-input button {
+    width: fit-content;
+    text-wrap: nowrap;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background: rgba(19, 101, 1, 1);
+    border-radius: 20px;
+    height: 100%;
+    padding: 10px 18px;
+    border: none;    
+}
+
+.phone-bottom {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.phone-bottom label {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 200;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.phone > span {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 200;
+    color: #000;
+    text-align: center;
+}
+
+.phone-bottom > input {
+    cursor: pointer;
+    appearance: none;
+    width: 38px;
+    height: 38px;
+    border: 3.2px solid rgba(117, 117, 117, 1);
+    border-radius: 6px;
+    position: relative;
+}
+
+.phone-bottom > input::after {
+    content: url(images/SliceCheck.png);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
+}
+
+.phone-bottom > input:checked::after {
+    display: flex;
+    height: 21px;
+}
+
+/* phone end */
+.navbar-lab-plus {
+    transition: .2s;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+
 
 /* responsiv start */
 
+
+.logo , .MobileAboutText {
+    display: none;
+}
 
 @media screen and (max-width:1373px) {
     footer h2 {
@@ -784,6 +1034,21 @@ footer ul {
     footer h5 {
         font-size: 14px;
     }
+    .phone {
+        padding: 20px;
+    }
+    .phone-input input, .phone-input input::placeholder {
+        font-size: 42px;
+    }
+    .phone-input button {
+        font-size: 24px;
+    }
+    .phone > span {
+        font-size: 16px;
+    }
+    .phone-bottom label {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:1135px) {
@@ -797,7 +1062,6 @@ footer ul {
         font-size: 12px;
     }
 }
-
 
 @media screen and (max-width:1030px) {
     header nav .navbar a {
@@ -910,7 +1174,16 @@ footer ul {
     .head {
         gap: 10px;
     }
-    
+    .sales-block {
+        grid-template-columns: 1fr 1fr;
+    }
+    .phone-input {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .phone-input input {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:840px) {
@@ -1102,6 +1375,12 @@ footer ul {
     .home-swiper-slide > div > h2 {
         font-size: 12px;
     }
+    .phone-bottom label {
+        font-size: 18px;
+    }
+    .phone > span {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:568px) {
@@ -1122,14 +1401,6 @@ footer ul {
     .head {
         gap: 5px;
     }
-}
-
-.logo {
-    display: none;
-}
-
-.MobileAboutText {
-    display: none;
 }
 
 @media screen and (max-width:550px) {
@@ -1223,7 +1494,7 @@ footer ul {
         align-items: center;
         justify-content: space-between;
     }
-    .navbar-lab > a, .navbar-lab > img {
+    .navbar-lab > a, .navbar-lab::after {
         display: none;
     }
     .navbar-lab > div img {
@@ -1387,6 +1658,35 @@ footer ul {
     }
     .call-nurse-box {
         display: flex;
+    }
+    .sales-block {
+        grid-template-columns: 1fr ;
+    }
+    .sales-item h2 {
+        font-size: 16px;
+    }
+    .sales-item h3 {
+        font-size: 24px;
+    }
+    .sales-item h4 {
+        font-size: 12px;
+    }
+    .sales-item span {
+        max-width: 200px;
+        font-size: 10px;
+    }
+    .phone {
+        gap: 10px;
+    }
+    .phone h2 {
+        display: none;
+    }
+    .phone-top h1 {
+        text-align: left;
+    }
+    
+    .phone-input input, .phone > span , .phone-bottom {
+        display: none;
     }
 }
 
