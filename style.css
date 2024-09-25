@@ -256,6 +256,7 @@ header nav .navbar > li:hover > a {
 }
 
 button.btn-green {
+    transition: .2s;
     width: fit-content;
     min-height: 54px;
     font-family: Inter;
@@ -272,6 +273,10 @@ button.btn-green {
     padding-right: calc(13px + 30px + 5px);
     border-radius: 10px;
     position: relative;
+}
+
+button.btn-green:hover , .phone-input button:hover, .recommendations-btn-grn:hover {
+    background: rgba(19, 150, 1, 1);
 }
 
 button.btn-green::after {
@@ -495,6 +500,7 @@ button.btn-green::after {
 }
 
 .recommendations-btn-grn {
+    transition: .2s;
     font-size: 20px;
     font-weight: 700;
     background: rgba(19, 101, 1, 1);
@@ -744,9 +750,11 @@ footer ul {
 }
 
 .sales-item-bottom {
+    height: 100%;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 15px;
 }
@@ -776,7 +784,7 @@ footer ul {
     font-size: 14px;
     font-weight: 400;
     color: #000;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .sales-item button {
@@ -853,6 +861,7 @@ footer ul {
 }
 
 .phone-input button {
+    transition: .2s;
     width: fit-content;
     text-wrap: nowrap;
     font-family: Inter;
