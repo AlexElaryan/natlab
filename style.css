@@ -1287,6 +1287,15 @@ footer ul {
 }
 
 @media screen and (max-width:840px) {
+    .biochemical-complex {
+        gap: 10px;
+    }
+    .biocomplex-left {
+        gap: 10px;
+    }
+    .biochemical-complex h3 {
+        margin-top: 10px;
+    }
     .biocomplex-block > img {
         display: none;
     }
