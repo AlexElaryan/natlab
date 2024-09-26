@@ -29,7 +29,7 @@ h1 {
     font-size: 40px;
     font-weight: 700;
     line-height: 48.41px;
-    text-align: left;    
+    text-align: left;
 }
 
 button {
@@ -56,7 +56,7 @@ p {
     background: rgba(19, 101, 1, 1);
 }
 
-.head > div {
+.head>div {
     width: 100%;
     display: flex;
     gap: 20px;
@@ -64,14 +64,14 @@ p {
     justify-content: space-between;
 }
 
-.head > div > a {
+.head>div>a {
     display: flex;
     align-items: center;
     gap: 10px;
     transition: .2s;
 }
 
-.head > div > a:hover {
+.head>div>a:hover {
     opacity: .7;
 }
 
@@ -110,7 +110,7 @@ header nav .navbar {
     list-style: none;
 }
 
-header nav .navbar > li {
+header nav .navbar>li {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -126,7 +126,7 @@ header nav .navbar a {
     transition: .2s;
 }
 
-header nav .navbar > li:hover > a {
+header nav .navbar>li:hover>a {
     color: rgba(71, 201, 55, 1);
 }
 
@@ -152,7 +152,7 @@ header nav .navbar > li:hover > a {
     transform: translateY(-50%);
 }
 
-.navbar-lab > ul {
+.navbar-lab>ul {
     position: absolute;
     z-index: 9;
     top: calc(100% + 0px);
@@ -205,13 +205,13 @@ header nav .navbar > li:hover > a {
     top: 0;
 }
 
-.home-swiper-slide > div  {
+.home-swiper-slide>div {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.home-swiper-slide > div > h2 {
+.home-swiper-slide>div>h2 {
     font-family: Inter;
     font-size: 28px;
     font-weight: 300;
@@ -256,7 +256,7 @@ header nav .navbar > li:hover > a {
 
 .home-swiper-item button.btn-green {
     font-size: 32px;
-    padding: 9px 121px 15px 30px;  
+    padding: 9px 121px 15px 30px;
     border-radius: 20px;
 }
 
@@ -286,7 +286,9 @@ button.btn-green {
     position: relative;
 }
 
-button.btn-green:hover , .phone-input button:hover, .recommendations-btn-grn:hover {
+button.btn-green:hover,
+.phone-input button:hover,
+.recommendations-btn-grn:hover {
     background: rgba(19, 150, 1, 1);
 }
 
@@ -330,7 +332,8 @@ button.btn-green::after {
 
 }
 
-.swiper-button-next::after , .swiper-button-prev::after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
     display: none;
 }
 
@@ -362,7 +365,7 @@ button.btn-green::after {
     gap: 26px;
 }
 
-.test-item > div {
+.test-item>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -473,7 +476,7 @@ button.btn-green::after {
     align-items: center;
 }
 
-.home-about-item > div {
+.home-about-item>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -548,7 +551,7 @@ button.btn-green::after {
     gap: 15px;
 }
 
-.rec-item-bottom > button {
+.rec-item-bottom>button {
     margin-top: 5px;
 }
 
@@ -568,7 +571,7 @@ button.btn-green::after {
     text-align: left;
 }
 
-.rec-item > img {
+.rec-item>img {
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
@@ -582,7 +585,7 @@ button.btn-green::after {
     width: 100%;
 }
 
-.home-comments > div {
+.home-comments>div {
     width: 100%;
     display: flex;
     align-items: center;
@@ -598,7 +601,7 @@ button.btn-green::after {
 }
 
 .home-comments h3 {
-    font-family: Inter  ;
+    font-family: Inter;
 }
 
 /* comments end */
@@ -627,7 +630,7 @@ footer {
     gap: 25px;
 }
 
-.footer-top-right > div {
+.footer-top-right>div {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -636,7 +639,7 @@ footer {
 footer span {
     font-family: Roboto;
     font-size: 18px;
-    font-weight: 400; 
+    font-weight: 400;
     color: #fff;
 }
 
@@ -659,7 +662,7 @@ footer h2 {
     font-family: Inter;
     font-size: 29px;
     font-weight: 400;
-    text-align: center;  
+    text-align: center;
     color: #fff;
     margin-top: 35px;
 }
@@ -705,7 +708,10 @@ footer ul {
 /* mobile call nurse end */
 
 
-.for_mobile-navbar-lab , .burger-btn , .home-about-item h5 , .home-about-item h4 {
+.for_mobile-navbar-lab,
+.burger-btn,
+.home-about-item h5,
+.home-about-item h4 {
     display: none;
 }
 
@@ -722,7 +728,7 @@ footer ul {
     font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
-    color: rgba(117, 117, 117, 1);    
+    color: rgba(117, 117, 117, 1);
 }
 
 
@@ -755,7 +761,7 @@ footer ul {
     border-radius: 20px;
 }
 
-.sales-item > img {
+.sales-item>img {
     width: 100%;
     border-radius: 20px;
 }
@@ -780,13 +786,13 @@ footer ul {
     font-family: Roboto;
     font-size: 32px;
     font-weight: 700;
-    color: rgba(19, 101, 1, 1);    
+    color: rgba(19, 101, 1, 1);
 }
 
 .sales-item h4 {
     font-family: Inter;
     font-size: 16px;
-    font-weight: 700;    
+    font-weight: 700;
     color: rgba(117, 117, 117, 1);
 }
 
@@ -838,7 +844,7 @@ footer ul {
     font-size: 32px;
     font-weight: 700;
     color: rgba(19, 101, 1, 1);
-    text-align: center;    
+    text-align: center;
 }
 
 .phone-top {
@@ -864,11 +870,12 @@ footer ul {
     padding-bottom: 10px;
 }
 
-.phone-input input , .phone-input input::placeholder {
+.phone-input input,
+.phone-input input::placeholder {
     font-family: Inter;
     font-size: 48px;
     font-weight: 200;
-    color: rgba(117, 117, 117, 1);    
+    color: rgba(117, 117, 117, 1);
 }
 
 .phone-input button {
@@ -883,7 +890,7 @@ footer ul {
     border-radius: 20px;
     height: 100%;
     padding: 10px 18px;
-    border: none;    
+    border: none;
 }
 
 .phone-bottom {
@@ -901,7 +908,7 @@ footer ul {
     cursor: pointer;
 }
 
-.phone > span {
+.phone>span {
     font-family: Inter;
     font-size: 20px;
     font-weight: 200;
@@ -909,7 +916,7 @@ footer ul {
     text-align: center;
 }
 
-.phone-bottom > input {
+.phone-bottom>input {
     cursor: pointer;
     appearance: none;
     width: 38px;
@@ -919,7 +926,7 @@ footer ul {
     position: relative;
 }
 
-.phone-bottom > input::after {
+.phone-bottom>input::after {
     content: url(images/SliceCheck.png);
     position: absolute;
     left: 50%;
@@ -928,7 +935,7 @@ footer ul {
     display: none;
 }
 
-.phone-bottom > input:checked::after {
+.phone-bottom>input:checked::after {
     display: flex;
     height: 21px;
 }
@@ -977,14 +984,14 @@ footer ul {
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
-    color: #000;    
+    color: #000;
 }
 
 .biochemical-complex h3 {
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
-    color: rgba(117, 117, 117, 1);    
+    color: rgba(117, 117, 117, 1);
 }
 
 .biocomplex-block {
@@ -998,7 +1005,7 @@ footer ul {
     gap: 30px;
 }
 
-.biocomplex-block > img {
+.biocomplex-block>img {
     margin-top: 50px;
     max-width: 450px;
     max-height: 300px;
@@ -1008,6 +1015,76 @@ footer ul {
 
 /* biochemical-complex end */
 
+/* contact start */
+
+.contact {
+    padding-top: 30px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 99px;
+}
+
+.contact-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.contact-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-item-hrefs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact h2 {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(117, 117, 117, 1);
+}
+
+.contact a , .contact h3 {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(24, 24, 24, 1);
+}
+
+.contact-item-phone {
+    gap: 0px;
+}
+
+.contact-item-phone a , .contact-item-vk a {
+    text-decoration: 1px solid underline;
+}
+
+.contact-item-phone a:first-of-type {
+    margin-top: 30px;
+}
+
+.contact-map {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+
+/* contact end */
 
 
 
@@ -1018,7 +1095,8 @@ footer ul {
 /* responsiv start */
 
 
-.logo , .MobileAboutText {
+.logo,
+.MobileAboutText {
     display: none;
 }
 
@@ -1029,27 +1107,34 @@ footer ul {
 }
 
 @media screen and (max-width:1330px) {
-    .home-swiper-slide > div > h2 {
+    .home-swiper-slide>div>h2 {
         font-size: 24px;
     }
+
     p {
         font-size: 14px;
     }
-    .head > div > a {
+
+    .head>div>a {
         gap: 5px;
     }
-    .head > div {
+
+    .head>div {
         gap: 10px;
     }
+
     .head {
         gap: 30px;
     }
+
     .home-about span {
         font-size: 24px;
     }
+
     .home-about {
         gap: 40px;
     }
+
     .biochemical-complex span {
         font-size: 20px;
     }
@@ -1058,90 +1143,117 @@ footer ul {
 @media screen and (max-width:1210px) {
     .home-about span {
         font-size: 22px;
-    }   
+    }
 }
 
 @media screen and (max-width:1200px) {
     .biochemical-complex h3 {
         font-size: 13px;
     }
+
     .container {
         padding-left: 65px;
         padding-right: 65px;
     }
+
     header nav .navbar a {
         font-size: 18px;
     }
+
     .home-swiper-item {
         min-width: 500px;
     }
+
     .home-swiper-item h2 {
-        font-size: 36px; 
+        font-size: 36px;
     }
+
     .home-swiper-item ul li {
         font-size: 24px;
     }
+
     .home-swiper-item button.btn-green {
         font-size: 24px;
         padding-right: 100px;
     }
+
     .home-swiper-item button.btn-green::after {
         right: 55px;
     }
+
     .home-swiper-item span {
         font-size: 16px;
     }
-    .home-swiper-slide > div > h2 {
+
+    .home-swiper-slide>div>h2 {
         font-size: 20px;
     }
+
     .search-test input {
         font-size: 24px;
     }
+
     .search-test input::placeholder {
         font-size: 24px;
     }
+
     .test-item h3 {
         font-size: 16px;
     }
+
     button.btn-green {
         min-height: 30px;
     }
+
     .home-about span {
         font-size: 16px;
     }
+
     .home-about h3 {
         font-size: 40px;
     }
+
     .home-about {
         gap: 30px;
     }
+
     h1 {
         font-size: 30px;
     }
+
     .rec-item h3 {
         font-size: 18px;
     }
+
     .rec-item span {
         font-size: 12px;
     }
+
     footer h2 {
         font-size: 22px;
     }
+
     footer h5 {
         font-size: 14px;
     }
+
     .phone {
         padding: 20px;
     }
-    .phone-input input, .phone-input input::placeholder {
+
+    .phone-input input,
+    .phone-input input::placeholder {
         font-size: 42px;
     }
+
     .phone-input button {
         font-size: 24px;
     }
-    .phone > span {
+
+    .phone>span {
         font-size: 16px;
     }
+
     .phone-bottom label {
         font-size: 20px;
     }
@@ -1151,13 +1263,25 @@ footer ul {
     .recommendations-item-btn-grn {
         font-size: 12px;
     }
+    .contact-block {
+        gap: 20px;
+    }
+    .contact a, .contact h3, .contact h2 {
+        font-size: 24px;
+    }
+    .contact-content {
+        gap: 50px;
+    }
+
     .home-comments {
         padding-right: 25px;
     }
+
     p {
         font-size: 12px;
     }
-    .biocomplex-block > img {
+
+    .biocomplex-block>img {
         max-width: 300px;
         max-height: 200px;
     }
@@ -1167,6 +1291,7 @@ footer ul {
     header nav .navbar a {
         font-size: 14px;
     }
+
     .home-about-item {
         min-height: 250px;
     }
@@ -1177,44 +1302,54 @@ footer ul {
         padding: 20px 10px;
         border-radius: 10px;
     }
+
     .test-item h3 {
         font-size: 12px;
     }
+
     button.btn-green {
         font-size: 12px;
         min-height: fit-content;
         padding: 10px;
         padding-right: 35px;
     }
+
     button.btn-green::after {
         width: 18px;
         height: 18px;
         right: 10px;
     }
+
     .complex-research .test-item {
         height: 132px;
     }
-    header > img {
+
+    header>img {
         width: 60px;
         object-fit: cover;
     }
+
     .navbar-lab {
         height: 50px;
     }
+
     .head img {
         width: 20px;
         object-fit: cover;
     }
+
     .swiper-button-prev {
         width: 40px;
         height: 40px;
         left: 65px;
     }
+
     .swiper-button-next {
         width: 40px;
         height: 40px;
         right: 80px;
     }
+
     .search-test {
         max-height: 50px;
         height: 50px;
@@ -1222,12 +1357,15 @@ footer ul {
         gap: 20px;
 
     }
+
     .search-test input {
         font-size: 18px;
     }
+
     .search-test input::placeholder {
         font-size: 18px;
     }
+
     .search-test img {
         width: 25px;
         object-fit: cover;
@@ -1239,48 +1377,62 @@ footer ul {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .head > img {
+
+    .head>img {
         width: 40px;
         object-fit: cover;
     }
+
     .swiper-button-prev {
         left: 20px;
     }
+
     .swiper-button-next {
         right: 40px;
     }
+
     .home-about h3 {
         font-size: 32px;
     }
+
     .home-about span {
         font-size: 14px;
     }
+
     .home-about img {
         max-width: 70px;
     }
+
     .home-about-item {
         min-height: 200px;
     }
+
     footer li a {
         font-size: 18px;
     }
+
     footer h2 {
         font-size: 18px;
     }
-    .navbar-lab > ul {
+
+    .navbar-lab>ul {
         padding: 10px;
         gap: 2px;
     }
+
     .head {
         gap: 10px;
     }
+
     .sales-block {
         grid-template-columns: 1fr 1fr;
     }
+
     .phone-input {
         flex-direction: column;
         height: fit-content;
     }
+
     .phone-input input {
         width: 100%;
     }
@@ -1290,122 +1442,186 @@ footer ul {
     .biochemical-complex {
         gap: 10px;
     }
+
     .biocomplex-left {
         gap: 10px;
     }
+
     .biochemical-complex h3 {
         margin-top: 10px;
     }
-    .biocomplex-block > img {
+
+    .biocomplex-block>img {
         display: none;
     }
+
     .biocomplex-left {
         width: 100%;
     }
+
     .biochemical-complex h2 {
         font-size: 12px;
     }
+
     .biochemical-complex ul li {
         font-size: 21px;
     }
+
     .biochemical-complex span {
         font-size: 12px;
     }
+
     .biochemical-complex h3 {
         font-size: 10px;
     }
+
     p {
         font-size: 10px;
     }
+
     .head div img {
         width: 15px;
     }
-    .head > img {
+
+    .head>img {
         width: 30px;
     }
+
     header nav .navbar a {
         font-size: 12px;
     }
-    header nav .navbar > li > img {
+
+    header nav .navbar>li>img {
         width: 10px;
         object-fit: cover;
     }
+
     .home-swiper-item h2 {
         font-size: 30px;
     }
+
     .home-swiper-item ul li {
         font-size: 18px;
     }
+
     .home-swiper-item button.btn-green {
         padding-right: 60px;
         font-size: 20px;
     }
+
     .home-swiper-item button.btn-green::after {
         width: 20px;
         object-fit: cover;
         height: 22px;
         right: 30px;
     }
+
     .home-swiper-item span {
         font-size: 14px;
     }
-    .home-swiper-slide > div > h2 {
+
+    .home-swiper-slide>div>h2 {
         font-size: 16px;
     }
+
     h1 {
         font-size: 28px;
     }
-    .footer-top-right > div img {
+
+    .footer-top-right>div img {
         width: 80px;
         object-fit: cover;
     }
-   
+
 }
 
 @media screen and (max-width:780px) {
     .rec-item h3 {
         font-size: 16px;
     }
+
     .rec-item span {
         font-size: 10px;
     }
-    
+
     .home-comments {
         padding: 15px;
     }
+
     .recommendations-btn-grn {
         font-size: 16px;
     }
+
     .recommendations-item-btn-grn {
         font-size: 10px;
     }
+
     .popular-tests {
         gap: 10px;
     }
+    .contact-block {
+        flex-direction: column;
+    }
+    .contact-item {
+        width: 100%;
+    }
+    .contact a, .contact h3 {
+        font-size: 16px;
+    } 
+    .contact h2 {
+        font-size: 20px;
+    }
+    .contact-item-hrefs > img {
+        width: 20px;
+        height: 20px;
+    }
+    .contact-item-hrefs {
+        gap: 10px;
+    }
+    .contact-block {
+        gap: 40px;
+    }
+    .contact-item {
+        gap: 20px;
+    }
+    .contact-item-phone a:first-of-type {
+        margin-top: 20px;
+    }
+    .contact-item-phone {
+        gap: 0px;
+    }
 }
+
 
 @media screen and (max-width:736px) {
     .rec-item h3 {
         font-size: 14px;
     }
+
     .rec-item-bottom {
         padding: 15px;
     }
+
     footer li a {
         font-size: 14px;
     }
+
     .test-item h3 {
         font-size: 10px;
     }
+
     button.btn-green {
         font-size: 10px;
     }
+
     .recommendations-item-btn-grn {
         padding: 5px 10px;
     }
-    .head > div {
+
+    .head>div {
         gap: 5px;
     }
+
     .head {
         gap: 5px;
     }
@@ -1415,46 +1631,60 @@ footer ul {
     p {
         font-size: 8px;
     }
+
     .head div img {
         width: 13px;
     }
-    .head > img {
+
+    .head>img {
         width: 20px;
     }
+
     header nav .navbar a {
         font-size: 10px;
     }
+
     header nav .navbar {
         gap: 5px;
     }
-    header > img {
+
+    header>img {
         width: 50px;
     }
-    .home-swiper-slide > div > h2 {
+
+    .home-swiper-slide>div>h2 {
         font-size: 14px;
     }
-    button.btn-green{
+
+    button.btn-green {
         padding-right: 30px;
     }
+
     button.btn-green::after {
         width: 14px;
         height: 14px;
     }
+
     .test-item {
         gap: 10px;
     }
+
     .complex-research .test-item {
         height: 106px;
     }
+
     .popular-tests {
         padding-bottom: 30px;
     }
+
     .rec-item-bottom {
         padding: 10px;
     }
+
     footer h2 {
         font-size: 14px;
     }
+
     footer h5 {
         font-size: 12px;
     }
@@ -1465,47 +1695,59 @@ footer ul {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .home-about img {
         max-width: 60px;
     }
+
     .home-about span {
         font-size: 12px;
     }
+
     .home-about h3 {
         font-size: 24px;
     }
+
     .home-about {
         padding-top: 20px;
         padding-bottom: 15px;
     }
+
     footer li a {
         font-size: 12px;
-    } 
+    }
+
     footer span {
         font-size: 14px;
     }
+
     .footer-top {
         gap: 20px;
     }
-    .footer-top-right > div img {
+
+    .footer-top-right>div img {
         width: 50px;
     }
+
     footer h2 {
         font-size: 12px;
     }
+
     footer h5 {
         font-size: 10px;
     }
 }
 
 @media screen and (max-width:600px) {
-    .home-swiper-slide > div > h2 {
+    .home-swiper-slide>div>h2 {
         font-size: 12px;
     }
+
     .phone-bottom label {
         font-size: 18px;
     }
-    .phone > span {
+
+    .phone>span {
         font-size: 14px;
     }
 }
@@ -1514,49 +1756,74 @@ footer ul {
     .home-swiper-item {
         min-width: fit-content;
     }
+
     .home-swiper-item h2 {
         font-size: 24px;
     }
+
     .home-swiper-item {
         padding: 20px;
         padding-right: 70px;
     }
-    .swiper-button-next img , .swiper-button-prev img {
+
+    .swiper-button-next img,
+    .swiper-button-prev img {
         width: 30px;
         height: 30px;
     }
+
     .head {
         gap: 5px;
     }
 }
 
 @media screen and (max-width:550px) {
-    .burger-btn , .home-about-item h5 , .home-about-item h4 {
+
+    .contact-map {
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .contact {
+        gap: 10px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    
+    .burger-btn,
+    .home-about-item h5,
+    .home-about-item h4 {
         display: flex;
     }
 
     .head p {
         display: none;
     }
-    .head > a:last-of-type img {
+
+    .head>a:last-of-type img {
         display: none;
     }
+
     .logo {
         display: block;
     }
+
     .head div img {
         max-width: 30px;
         width: 30px;
         object-fit: cover;
     }
-    .head > img {
+
+    .head>img {
         width: 60px;
         justify-self: flex-start;
-    } 
+    }
+
     .container {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .head {
         height: 69px;
         justify-content: flex-end;
@@ -1564,16 +1831,19 @@ footer ul {
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    .head > div {
+
+    .head>div {
         justify-content: flex-end;
         gap: 20px;
     }
+
     .head .burger-btn {
         width: 30px;
         object-fit: cover;
         cursor: pointer;
     }
-    header > img {
+
+    header>img {
         display: none;
     }
 
@@ -1582,6 +1852,7 @@ footer ul {
         width: 0;
         height: 0;
     }
+
     nav {
         display: none;
         background: #fff;
@@ -1592,63 +1863,90 @@ footer ul {
         top: 69px;
         left: 0px;
     }
+
     nav.burgerOpen {
         display: flex;
     }
+
     .navbar {
         flex-direction: column;
     }
+
     header nav .navbar {
         justify-content: flex-start;
     }
+
     header nav .navbar a {
         font-family: Inter;
         font-size: 20px;
         font-weight: 400;
         line-height: 24.2px;
-        text-align: left;   
+        text-align: left;
         color: #000;
     }
-    header nav .navbar > li {
+
+    header nav .navbar>li {
         width: 100%;
         height: fit-content;
         padding: 15px 40px 15px 20px;
         border-bottom: 1px solid rgba(117, 117, 117, 1);
     }
-    .navbar-lab > div {
+
+    .navbar-lab>a {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
-    .navbar-lab > a, .navbar-lab::after {
+
+    .navbar-lab::after {
         display: none;
+
     }
-    .navbar-lab > div img {
+    .navbar-lab-plus {
+        position: relative;
+    }
+    .navbar-lab-plus::after {
+        content: '';
         width: 25px;
-        object-fit: cover;
-        cursor: pointer;
+        height: 25px;
+        background-image: url(images/plus.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: .2s;
     }
-    .navbar-lab > ul {
+
+    .navbar-lab>ul {
         padding-top: 0px;
         width: 100%;
         position: unset;
         box-shadow: unset;
     }
+
+    .rotate-plus::after {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+
     .navbar-lab {
         flex-direction: column;
     }
+
     .home-about {
         display: grid;
         grid-template-columns: 1fr 1fr;
         min-height: fit-content;
     }
+
     .home-about-item {
         width: 100%;
     }
+
     .swiper1 {
         display: none;
     }
+
     .home-swiper {
         width: 100%;
         height: 180px;
@@ -1656,28 +1954,35 @@ footer ul {
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     .search-test {
         display: none;
     }
+
     h1 {
         font-size: 20px;
     }
+
     .test-item h3 {
         font-size: 16px;
     }
+
     button.btn-green {
         font-size: 13px;
     }
+
     .home-about-item {
         min-height: unset;
         height: fit-content;
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
+
     .home-about img {
         margin-top: 0px;
         margin-bottom: 15px;
     }
+
     .home-about-item h5 {
         font-family: Inter;
         font-size: 10px;
@@ -1686,133 +1991,170 @@ footer ul {
         text-align: center;
         color: #fff;
     }
+
     .home-about-item h4 {
         font-family: Inter;
         font-size: 10px;
         font-weight: 700;
         color: #fff;
     }
+
     .home-about h3 {
         font-size: 20px;
     }
+
     .home-about-item h5:last-of-type {
         max-width: 123px;
     }
+
     .DesktopAboutText {
         display: none;
     }
+
     .MobileAboutText {
         display: flex;
     }
+
     .home-about span {
         text-transform: uppercase;
         font-weight: 700;
     }
+
     .home-about img {
         max-width: 45px;
     }
+
     .complex-research .test-item {
         padding: 25px;
         height: fit-content;
         min-height: 144px;
     }
+
     .rec-item h3 {
         width: 100%;
         max-width: 100%;
         font-size: 20px;
     }
+
     .rec-item-bottom {
         gap: 5px;
     }
+
     .recommendations-item-btn-grn {
         font-size: 16px;
         padding: 5px 20px;
     }
+
     .rec-item span {
         font-size: 12px;
     }
-    .recommendations > .recommendations-btn-grn {
+
+    .recommendations>.recommendations-btn-grn {
         display: none;
     }
+
     .rec-item h3 {
         font-size: 14px;
     }
+
     .rec-item span {
         font-size: 14px;
     }
+
     .rec-item-bottom {
         gap: 10px;
         padding: 15px 20px;
     }
-    .home-comments > div > span {
+
+    .home-comments>div>span {
         display: none;
     }
-    .footer-top > img:first-of-type {
+
+    .footer-top>img:first-of-type {
         display: none;
     }
-    .footer-top-right > div img {
+
+    .footer-top-right>div img {
         width: 50px;
         height: 30px;
         border-radius: 10px;
     }
+
     footer span {
         font-size: 12px;
     }
-    .footer-top-right > div {
+
+    .footer-top-right>div {
         gap: 10px;
     }
+
     footer ul {
         padding: 0px;
         display: flex;
         flex-direction: column;
     }
+
     .footer-top {
         padding-bottom: 10px;
         border: none;
     }
+
     footer li a {
-        font-size: 18px;    
+        font-size: 18px;
     }
+
     footer h5 {
         font-size: 10px;
         margin-top: 45px;
         text-align: left;
     }
+
     footer h2 {
         font-size: 16px;
         margin-top: 30px;
         text-align: left;
     }
+
     .call-nurse-box {
         display: flex;
     }
+
     .sales-block {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
+
     .sales-item h2 {
         font-size: 16px;
     }
+
     .sales-item h3 {
         font-size: 24px;
     }
+
     .sales-item h4 {
         font-size: 12px;
     }
+
     .sales-item span {
         max-width: 200px;
         font-size: 10px;
     }
+
     .phone {
         gap: 10px;
     }
+
     .phone h2 {
         display: none;
     }
+
     .phone-top h1 {
         text-align: left;
     }
-    
-    .phone-input input, .phone > span , .phone-bottom {
+
+    .phone-input input,
+    .phone>span,
+    .phone-bottom {
         display: none;
     }
 }
@@ -1821,9 +2163,13 @@ footer ul {
     .head div img {
         width: 20px;
     }
-    .test-item h3 , .rec-item-bottom > button , .recommendations-item-btn-grn {
+
+    .test-item h3,
+    .rec-item-bottom>button,
+    .recommendations-item-btn-grn {
         font-size: 12px;
     }
+
     .complex-research .test-item {
         padding: 15px;
     }

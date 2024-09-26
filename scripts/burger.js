@@ -21,15 +21,17 @@ burgerBtn.onclick = () => {
 let navbarLabPlus = document.querySelector('.navbar-lab-plus');
 let navbarLabMobileBox = document.querySelector('.mobileNavbarLab');
 let navblmbIsOpen = false;
- 
-navbarLabPlus.onclick = () => {
+
+navbarLabPlus.addEventListener('click', (e) => {
+  e.preventDefault(); 
+
   if (!navblmbIsOpen) {
     navbarLabMobileBox.style.display = 'flex';
-    navbarLabPlus.style.rotate = '45deg';
+    navbarLabPlus.classList.add('rotate-plus');
     navblmbIsOpen = true;
-  } else if (navblmbIsOpen) {
-    navbarLabMobileBox.style.display = 'none'
-    navbarLabPlus.style.rotate = '0deg';
+  } else {
+    navbarLabMobileBox.style.display = 'none';
+    navbarLabPlus.classList.remove('rotate-plus');
     navblmbIsOpen = false;
   }
-}
+});

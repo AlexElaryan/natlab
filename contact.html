@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -65,40 +66,55 @@
     <div class="site-location container">
         <a href="index.html">Главная</a>
         <img src="images/arrow-right.svg">
-        <a href="sales.html">Акции</a>
-        <img src="images/arrow-right.svg">
-        <a href>Биохимический комплекс</a>
+        <a href>Контакты</a>
     </div>
 
-
-    <div class="biochemical-complex container">
-        <h1>Биохимический комплекс</h1>
-        <div class="biocomplex-block">
-            <div class="biocomplex-left">
-                <h2>Что входит в программу?</h2>
-                <ul>
-                    <li>глюкоза;</li>
-                    <li>холестерин;</li>
-                    <li>билирубин общий;</li>
-                    <li>белок общий;</li>
-                    <li>железо;</li>
-                    <li>мочевина;</li>
-                    <li>креатинин;</li>
-                    <li>АЛТ и АСТ.</li>
-                </ul>
-                <span>
-                    Стоимость комплекса со скидкой  = <span>888</span> руб. <br>  Обычная стоимость комплекса = <span>1 450</span>
-                     руб.
-                </span>
-                <span>Вы экономите  <span>562</span> руб.</span>
-                </span>
-                <span>Предложение не суммируется с другими скидками. Подробности уточняйте по тел. +7 (843) 296-09-30
-                    Срок действия до 31 августа включительно. </span>
-                <h3>*Цены могут меняться, уточняйте у администратора</h3>
+    <div class="contact container">
+        <h1>Контакты</h1>
+        <div class="contact-content">
+            <div class="contact-block">
+                <div class="contact-item">
+                    <div class="contact-item-hrefs">
+                        <img src="images/bi_geo-alt-fill.png">
+                        <h2>Адрес</h2>
+                    </div>
+                    <a href>г.Казань, ул. Кул Гали, 27 (пункт забора анализов) </a>
+                    <a href>г. Казань, ул. Космонавтов, 59 (медицинская лаборатория)</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-hrefs">
+                        <img src="images/mdi_invoice-text-scheduled.png">
+                        <h2>Режим работы</h2>
+                    </div>
+                    <h3>Режим работы процедурного кабинета для сдачи медицинских анализов и медицинской лаборатории:
+                    </h3>
+                    <h3>7:00-13:00 в будние и в субботу
+                        выходной в воскресенье</h3>
+                </div>
             </div>
-            <img src="images/sales1.jpg">
+            <div class="contact-block">
+                <div class="contact-item contact-item-phone">
+                    <div class="contact-item-hrefs">
+                        <img src="images/mingcute_phone-call-fill.png">
+                        <h2>Телефоны для связи:</h2>
+                    </div>
+                    <a href>8 (843)290-30-35</a>
+                    <a href>8 987 271-45-45</a>
+                    <a href>What’s App: 8 987 296-09-30</a>
+                </div>
+                <div class="contact-item contact-item-vk">
+                    <div class="contact-item-hrefs">
+                        <img src="images/uil_vk.png">
+                        <h2>Социальные сети</h2>
+                    </div>
+                    <a href>VK</a>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- <div class="contact-map" id="map"></div> -->
+    <iframe class="contact-map" src="https://yandex.ru/map-widget/v1/?ll=49.244853,55.751173&z=16&l=map&pt=49.244853,55.751173,comma" frameborder="0"></iframe>
 
 
     <div class="phone-block container">
@@ -149,6 +165,7 @@
     </footer>
 
     <script src="scripts/burger.js"></script>
+    <!-- <script src="scripts/contact.js"></script> -->
 </body>
 
 </html>
