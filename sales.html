@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
 
     <div class="head container">
         <img src="images/logo.png" class="logo">
         <div>
-            <a href>
+            <div>
                 <img src="images/Telehone.png">
-                <p>Контактный номер телефона:
-                    <span>8 (843) 290-30-35, 8 987 271-45-45</span>
+                <p>Контактный номер телефона: <br>
+                    <a href>8 (843) 290-30-35</a>, <a href>8 987 271-45-45</a>
                 </p>
-            </a>
-            <a href>
+            </div>
+            <div>
                 <img src="images/map.png">
-                <p>г. Казань, ул. Кул Гали, 27 (пункт забора)
+                <p>г. Казань, ул. Кул Гали, 27 (пункт забора) <br>
                     <span> г. Казань, ул. Космонавтов, 59 (лаборатория)</span>
                 </p>
-            </a>
+            </div>
             <a href>
                 <img src="images/Account.png">
                 <p>Вход в личный кабинет</p>
             </a>
-            <a href>
+            <div>
                 <img src="images/basket.png">
                 <p>Корзина</p>
-            </a>
+            </div>
         </div>
         <img src="images/Burger.svg" class="burger-btn">
         <a href>
@@ -67,11 +69,12 @@
             </ul>
         </nav>
     </header>
-    
-    <div class="site-location container">
-        <a href="index.html">Главная</a>
-        <img src="images/arrow-right.svg">
-        <a href>Акции</a>
+
+    <div class="breadcrumb-row container">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li>Акции</li>
+        </ul>
     </div>
 
     <div class="sales container">
@@ -84,8 +87,9 @@
                     <h2>Биохимический комлекс</h2>
                     <h3>888 руб.</h3>
                     <h4>вместо 1450 руб.</h4>
-                    <span>Комплекс включает в себя анализы: глюкоза, холестерин, билирубин общий,  белок общий, железо, мочевина, креатинин, АЛТ и АСТ.</span>
-                        <button class="btn-green" onclick="window.location.href='biochemical.html';">Подробнее</button>
+                    <span>Комплекс включает в себя анализы: глюкоза, холестерин, билирубин общий,  белок общий, железо,
+                        мочевина, креатинин, АЛТ и АСТ.</span>
+                    <button class="btn-green" onclick="window.location.href='biochemical.html';">Подробнее</button>
                 </div>
             </div>
             <div class="sales-item">
@@ -95,7 +99,7 @@
                     <h3>600 руб.</h3>
                     <h4>вместо 1200 руб..</h4>
                     <span>Комплекс включает в себя анализы: ТТГ,Т4 свободный, Т3 свободный, Антитела к ТПО.</span>
-                        <button class="btn-green">Подробнее</button>
+                    <button class="btn-green">Подробнее</button>
                 </div>
             </div>
             <div class="sales-item">
@@ -105,7 +109,7 @@
                     <h3>650 руб.</h3>
                     <h4>вместо 1500 руб.</h4>
                     <span>Анализ на 25-OH витамин D</span>
-                        <button class="btn-green">Подробнее</button>
+                    <button class="btn-green">Подробнее</button>
                 </div>
             </div>
             <div class="sales-item">
@@ -114,8 +118,9 @@
                     <h2>Биохимический комлекс</h2>
                     <h3>888 руб.</h3>
                     <h4>вместо 1450 руб.</h4>
-                    <span>Комплекс включает в себя анализы: глюкоза, холестерин, билирубин общий,  белок общий, железо, мочевина, креатинин, АЛТ и АСТ.</span>
-                        <button class="btn-green">Подробнее</button>
+                    <span>Комплекс включает в себя анализы: глюкоза, холестерин, билирубин общий,  белок общий, железо,
+                        мочевина, креатинин, АЛТ и АСТ.</span>
+                    <button class="btn-green">Подробнее</button>
                 </div>
             </div>
             <div class="sales-item">
@@ -125,7 +130,7 @@
                     <h3>600 руб.</h3>
                     <h4>вместо 1200 руб..</h4>
                     <span>Комплекс включает в себя анализы: ТТГ,Т4 свободный, Т3 свободный, Антитела к ТПО.</span>
-                        <button class="btn-green">Подробнее</button>
+                    <button class="btn-green">Подробнее</button>
                 </div>
             </div>
             <div class="sales-item">
@@ -135,10 +140,10 @@
                     <h3>650 руб.</h3>
                     <h4>вместо 1500 руб.</h4>
                     <span>Анализ на 25-OH витамин D</span>
-                        <button class="btn-green">Подробнее</button>
+                    <button class="btn-green">Подробнее</button>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -155,7 +160,7 @@
             <div class="phone-bottom">
                 <input type="checkbox" id="agreement">
                 <label for="agreement">Я даю согласие на обработку персональных данных</label>
-                
+
             </div>
             <span>Укажите номер телефона. Пример: +7(910) 123-45-67. Убедитесь, что телефон введен корректно</span>
         </div>
@@ -191,4 +196,5 @@
 
     <script src="scripts/burger.js"></script>
 </body>
+
 </html>

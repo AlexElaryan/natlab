@@ -64,22 +64,19 @@ p {
     justify-content: space-between;
 }
 
-.head>div>a {
+.head>div>div , .head>div>a {
     display: flex;
     align-items: center;
     gap: 10px;
     transition: .2s;
 }
 
-.head>div>a:hover {
+.head>div>div:hover {
     opacity: .7;
 }
 
-.head p {
-    cursor: pointer;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
+.head a {
+    color: #fff;
 }
 
 /* head end */
@@ -126,7 +123,8 @@ header nav .navbar a {
     transition: .2s;
 }
 
-header nav .navbar>li:hover>a {
+header nav .navbar>li:hover>a,
+.navbar-lab ul li a:hover {
     color: rgba(71, 201, 55, 1);
 }
 
@@ -717,20 +715,34 @@ footer ul {
 
 /* file location start */
 
-.site-location {
+.breadcrumb-row {
     padding-top: 10px;
     padding-bottom: 10px;
-    display: flex;
-    align-items: center;
 }
 
-.site-location a {
+.breadcrumb-row ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.breadcrumb-row a,
+.breadcrumb-row li {
+    position: relative;
     font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
     color: rgba(117, 117, 117, 1);
 }
 
+.breadcrumb-row a::after {
+    content: url(images/arrow-right.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    left: 100%;
+}
 
 /* file location end */
 
@@ -919,25 +931,24 @@ footer ul {
 .phone-bottom>input {
     cursor: pointer;
     appearance: none;
-    width: 38px;
-    height: 38px;
-    border: 3.2px solid rgba(117, 117, 117, 1);
+    width: 30px;
+    height: 30px;
+    border: 2.8px solid rgba(117, 117, 117, 1);
     border-radius: 6px;
     position: relative;
 }
 
 .phone-bottom>input::after {
-    content: url(images/SliceCheck.png);
+    content: url(images/visitOrderCheck.png);
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-35%);
     display: none;
 }
 
 .phone-bottom>input:checked::after {
     display: flex;
-    height: 21px;
 }
 
 /* phone end */
@@ -1057,7 +1068,8 @@ footer ul {
     color: rgba(117, 117, 117, 1);
 }
 
-.contact a , .contact h3 {
+.contact a,
+.contact h3 {
     font-family: Roboto;
     font-size: 32px;
     font-weight: 700;
@@ -1068,7 +1080,8 @@ footer ul {
     gap: 0px;
 }
 
-.contact-item-phone a , .contact-item-vk a {
+.contact-item-phone a,
+.contact-item-vk a {
     text-decoration: 1px solid underline;
 }
 
@@ -1085,6 +1098,217 @@ footer ul {
 
 
 /* contact end */
+
+/* home visit start */
+
+.visit-order-agreement label {
+    font-size: 14px;
+    color: #000;
+}
+
+.visit_order-service button {
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+.visit_order-service {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.visit_order-service-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 45px 20px;
+    background: rgba(218, 254, 166, 1);
+}
+
+.visit_order-service-left>.visit-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.visit_order-service-left input[type='text'] {
+    width: 100%;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 17px;
+    height: 50px;
+}
+
+.visit_order-service-left input[type='text'],
+.visit_order-service-left input[type='text']::placeholder {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.visit-order-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding-bottom: 34px;
+}
+
+.visit-order-bottom h1 {
+    color: rgba(19, 101, 1, 1);
+}
+
+.visit-order-bottom h3 {
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.order-price {
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+.order-price>div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 170px;
+}
+
+.order-price .test-item {
+    width: 50%;
+    padding: 20px 40px;
+}
+
+.about-test {
+    background: url(images/coronavirus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 20px 0px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.about-test::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(226, 223, 223, 0.8);
+}
+
+.about-test>div {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.about-test span {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.about-test-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    row-gap: 40px;
+}
+
+.about-test-bottom span {
+    font-size: 24px;
+    position: relative;
+    margin-left: 70px;
+}
+
+.about-test-bottom span::after {
+    position: absolute;
+    right: calc(100% + 20px);
+    content: '';
+    background-image: url(images/testaboutcheck.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    transform: translateY(-5px);
+}
+
+.test-restrictions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.test-restrictions span {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.test-restrictions ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 10px;
+}
+
+.test-restrictions ul li {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.test-right {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.test-right span {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.test-right-block {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+}
+
+.test-right-block>div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.visit-homeloc {
+    display: none;
+}
+
+
+/* home visit end */
 
 
 
@@ -1106,16 +1330,41 @@ footer ul {
     }
 }
 
-@media screen and (max-width:1330px) {
+@media screen and (max-width:1386px) {
+    .about-test span {
+        font-size: 26px;
+    }
+
+    .about-test-bottom span {
+        font-size: 20px;
+    }
+
     .home-swiper-slide>div>h2 {
         font-size: 24px;
+    }
+
+    .visit-order-agreement label {
+        font-size: 12px;
+        width: fit-content;
+    }
+
+    .visit_order-service-left>.visit-item {
+        gap: 30px;
+    }
+
+    .visit_order-service>img {
+        width: 690px;
+    }
+
+    .order-price>div {
+        gap: 60px;
     }
 
     p {
         font-size: 14px;
     }
 
-    .head>div>a {
+    .head>div>div {
         gap: 5px;
     }
 
@@ -1257,18 +1506,52 @@ footer ul {
     .phone-bottom label {
         font-size: 20px;
     }
+
+    .phone-bottom label {
+        font-size: 16px;
+    }
+
+    .visit_order-service-left input[type='text'],
+    .visit_order-service-left input[type='text']::placeholder {
+        font-size: 14px;
+    }
+
+    .visit_order-service-left {
+        gap: 20px;
+    }
+
+    .visit_order-service>img {
+        width: 600px;
+    }
+
+    .about-test-bottom span {
+        font-size: 16px;
+        margin-left: 40px;
+    }
+
+    .about-test-bottom span::after {
+        width: 30px;
+        height: 30px;
+        right: calc(100% + 10px);
+    }
 }
+
 
 @media screen and (max-width:1135px) {
     .recommendations-item-btn-grn {
         font-size: 12px;
     }
+
     .contact-block {
         gap: 20px;
     }
-    .contact a, .contact h3, .contact h2 {
+
+    .contact a,
+    .contact h3,
+    .contact h2 {
         font-size: 24px;
     }
+
     .contact-content {
         gap: 50px;
     }
@@ -1285,6 +1568,11 @@ footer ul {
         max-width: 300px;
         max-height: 200px;
     }
+
+    .visit_order-service>img {
+        width: 535px;
+        height: 400px;
+    }
 }
 
 @media screen and (max-width:1030px) {
@@ -1295,12 +1583,35 @@ footer ul {
     .home-about-item {
         min-height: 250px;
     }
+
 }
 
 @media screen and (max-width:1000px) {
     .test-item {
         padding: 20px 10px;
         border-radius: 10px;
+    }
+
+    .test-right-block {
+        gap: 20px;
+    }
+
+    .visit_order-service {
+        flex-direction: column-reverse;
+    }
+
+    .visit_order-service-left,
+    .visit_order-service>img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .visit_order-service-left input[type='text'] {
+        width: 100%;
+    }
+
+    .visit_order-service-left>.visit-item {
+        width: 100%;
     }
 
     .test-item h3 {
@@ -1443,8 +1754,74 @@ footer ul {
         gap: 10px;
     }
 
+    .about-test-bottom {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .about-test span {
+        font-size: 14px;
+    }
+
+    .about-test-bottom span {
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    .about-test-bottom span::after {
+        right: calc(100% + 5px);
+        width: 20px;
+        height: 20px;
+    }
+
+    .test-restrictions ul li {
+        font-size: 12px;
+    }
+
+    .test-restrictions span {
+        font-size: 10px;
+    }
+
+    .test-restrictions {
+        gap: 10px;
+    }
+
+    .test-right span {
+        font-size: 12px;
+    }
+
+    .test-right-block>div span {
+        text-align: center;
+    }
+
+    .test-right-block>div>img {
+        max-width: 30px;
+    }
+
     .biocomplex-left {
         gap: 10px;
+    }
+
+    .about-test {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .order-price>div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .order-price .test-item {
+        width: 100%;
+    }
+
+    .order-price .test-item h3 {
+        font-size: 24px;
+    }
+
+    .visit-order-bottom h3 {
+        font-size: 14px;
     }
 
     .biochemical-complex h3 {
@@ -1559,39 +1936,49 @@ footer ul {
     .popular-tests {
         gap: 10px;
     }
+
     .contact-block {
         flex-direction: column;
     }
+
     .contact-item {
         width: 100%;
     }
-    .contact a, .contact h3 {
+
+    .contact a,
+    .contact h3 {
         font-size: 16px;
-    } 
+    }
+
     .contact h2 {
         font-size: 20px;
     }
-    .contact-item-hrefs > img {
+
+    .contact-item-hrefs>img {
         width: 20px;
         height: 20px;
     }
+
     .contact-item-hrefs {
         gap: 10px;
     }
+
     .contact-block {
         gap: 40px;
     }
+
     .contact-item {
         gap: 20px;
     }
+
     .contact-item-phone a:first-of-type {
         margin-top: 20px;
     }
+
     .contact-item-phone {
         gap: 0px;
     }
 }
-
 
 @media screen and (max-width:736px) {
     .rec-item h3 {
@@ -1778,6 +2165,17 @@ footer ul {
 }
 
 @media screen and (max-width:550px) {
+    .visit_order-service-left>.visit-item:first-of-type {
+        flex-direction: column;
+    }
+
+    .visit_order-service-left>.visit-item {
+        gap: 20px;
+    }
+
+    .visit-homeloc {
+        display: flex;
+    }
 
     .contact-map {
         margin-left: 20px;
@@ -1789,7 +2187,7 @@ footer ul {
         padding-top: 0px;
         padding-bottom: 20px;
     }
-    
+
     .burger-btn,
     .home-about-item h5,
     .home-about-item h4 {
@@ -1900,9 +2298,11 @@ footer ul {
         display: none;
 
     }
+
     .navbar-lab-plus {
         position: relative;
     }
+
     .navbar-lab-plus::after {
         content: '';
         width: 25px;
@@ -2162,6 +2562,10 @@ footer ul {
 @media screen and (max-width:340px) {
     .head div img {
         width: 20px;
+    }
+
+    .about-test-bottom span {
+        font-size: 9px;
     }
 
     .test-item h3,

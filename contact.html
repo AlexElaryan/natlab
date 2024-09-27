@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -14,26 +13,26 @@
     <div class="head container">
         <img src="images/logo.png" class="logo">
         <div>
-            <a href>
+            <div>
                 <img src="images/Telehone.png">
-                <p>Контактный номер телефона:
-                    <span>8 (843) 290-30-35, 8 987 271-45-45</span>
+                <p>Контактный номер телефона: <br>
+                    <a href>8 (843) 290-30-35</a>, <a href>8 987 271-45-45</a>
                 </p>
-            </a>
-            <a href>
+            </div>
+            <div>
                 <img src="images/map.png">
-                <p>г. Казань, ул. Кул Гали, 27 (пункт забора)
+                <p>г. Казань, ул. Кул Гали, 27 (пункт забора) <br>
                     <span> г. Казань, ул. Космонавтов, 59 (лаборатория)</span>
                 </p>
-            </a>
+            </div>
             <a href>
                 <img src="images/Account.png">
                 <p>Вход в личный кабинет</p>
             </a>
-            <a href>
+            <div>
                 <img src="images/basket.png">
                 <p>Корзина</p>
-            </a>
+            </div>
         </div>
         <img src="images/Burger.svg" class="burger-btn">
         <a href>
@@ -63,11 +62,13 @@
         </nav>
     </header>
 
-    <div class="site-location container">
-        <a href="index.html">Главная</a>
-        <img src="images/arrow-right.svg">
-        <a href>Контакты</a>
+    <div class="breadcrumb-row container">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li>Контакты</li>
+        </ul>
     </div>
+
 
     <div class="contact container">
         <h1>Контакты</h1>
