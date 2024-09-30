@@ -86,9 +86,9 @@ p {
     align-items: center;
     gap: 10px;
     transition: .2s;
+    cursor: pointer;
 }
 
-.head>div>div:hover,
 .head>div a:hover {
     opacity: .7;
 }
@@ -1495,7 +1495,7 @@ footer ul {
     font-size: 40px;
     font-weight: 700;
     padding: 60px 0px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     position: relative;
     color: #000;
 }
@@ -1729,6 +1729,7 @@ footer ul {
 
 .tests-block-left {
     width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     border-right: 1px solid rgba(117, 117, 117, 1);
@@ -1744,6 +1745,7 @@ footer ul {
 
 .tests-block-left_item a {
     font-family: Inter;
+    cursor: pointer;
     color: rgba(19, 101, 1, 1);
 }
 
@@ -1762,24 +1764,43 @@ footer ul {
 
 .tests-block-right {
     width: 100%;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+}
+
+.tests-block-right > div {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.tests-block-right > div > div {
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 .tests-block-right h2 {
+    border-bottom: 0.5px solid rgba(117, 117, 117, 1);
     color: rgba(19, 101, 1, 1);
     padding-left: 129px;
     background: rgba(226, 223, 223, 0.5);
 }
 
 .tests-block-right_item {
-    height: 160px;
+    min-height: 160px;
+    height: fit-content;
     border-top: 1px solid rgba(117, 117, 117, 1);
     padding: 20px 25px 30px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+}
+
+.tests-block-right_item:first-of-type {
+    border-top: 0.5px solid rgba(117, 117, 117, 1);
 }
 
 .tests-bri-left {
@@ -1836,6 +1857,15 @@ footer ul {
     font-size: 28px;
 }
 
+.tests-block-left_item a:hover , .labarator-nav a:hover {
+    opacity: .6;
+}
+
+@media screen and (min-width:840px) {
+    .tests-block-left_item-open > a::after {
+        transform: translateY(-50%) rotate(-90deg);
+    }
+}
 /* test end */
 
 /* testC start */
@@ -1927,17 +1957,48 @@ footer ul {
     position: relative;
 }
 
-.calendar-tectC::after {
-    content: '';
-    background-image: url(images/info.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+.calendar-tectC > img {
     width: 30px;
     height: 30px;
     position: absolute;
     right: 0px;
-    bottom: 30px;
+    bottom: 40px;
     cursor: pointer;
+}
+
+
+
+.testC-info {
+    display: none;
+    max-width: 190px;
+    position: absolute;
+    bottom: calc(100% + 45px);
+    right: -30px;
+    background: #fff;
+    padding: 15px 10px;
+    padding-bottom: 25px;
+}
+.calendar-tectC > img:hover + .testC-info {
+    display: flex;
+}
+
+
+.testC-info::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background-image: url(images/testpolygon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 25px;
+    top: calc(100% - 15px);
+}
+
+.testC-info h6 {
+    color: #000;
+    font-family: Inter;
+    font-weight: 400;
 }
 
 .testC > h2 {
@@ -2232,7 +2293,6 @@ footer ul {
 @media screen and (max-width:1135px) {
     .tests-block-right_item {
         padding: 20px;
-        height: calc(2 * 70.7px);
         gap: 15px;
     }
     .testC-left span {
@@ -2257,6 +2317,9 @@ footer ul {
 
     .tests-block-right h3 {
         font-size: 22px;
+    }
+    .tests-block-right  {
+        grid-template-rows: 70.7px 1fr;
     }
 
     .become-partner a {
@@ -2618,7 +2681,7 @@ footer ul {
         border-bottom: 1px solid rgba(117, 117, 117, 1);
     }
     
-    .tests {
+    .test-test {
         padding-left: 0px !important;
         padding-right: 0px !important;
         padding-bottom: 50px;
