@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
     <title>Document</title>
 </head>
 
@@ -45,8 +46,9 @@
         <nav>
             <ul class="navbar">
                 <li class="navbar-lab">
-                    <a href="labarator.html" class="navbar-lab-plus">О лаборатории</a>
-                    <ul class="mobileNavbarLab">
+                    <a href="labarator.html">О лаборатории</a>
+                    <span></span>
+                    <ul>
                         <li><a href="comments.html">Отзывы</a></li>
                         <li><a href>Оборудование</a></li>
                         <li><a href>Лицензии</a></li>
@@ -54,10 +56,10 @@
                     </ul>
                 </li>
                 <li><a href="tests.html">Анализы</a></li>
-                <li><a href="homevisit.html" class="navbar-link-active">Выезд на дом</a></li>
+                <li><a href="homevisit.html">Выезд на дом</a></li>
                 <li><a href="corporate.html">Корпоративным клиентам</a></li>
                 <li><a href="sales.html">Акции</a></li>
-                <li><a href="contact.html" >Контакты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -73,20 +75,43 @@
     <div class="visit_order-service container">
         <div class="visit_order-service-left">
             <div class="visit-item">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Телефон">
+                <div class="input-wrapper input-wrapper-name forVisitRequestInputs">
+                    <input type="text" placeholder="Имя" class="visit-name">
+                </div>
+                <div class="input-wrapper forVisitRequestInputs">
+                    <input type="text" placeholder="Телефон" class="visit-phone">
+                </div>
             </div>
-            <input type="text" placeholder="Адрес выезда">
+            <div class="input-wrapper input-wrapper-date">
+                <input type="text" placeholder="Адрес выезда">
+                <div class="invalid-feedback">
+                    <p>Должно быть не меньше 2 символов</p>
+                </div>
+            </div>
             <div class="visit-item">
-                <input type="text" placeholder="Дата выезда">
-                <input type="text" placeholder="Время выезда">
+                <div class="input-wrapper input-wrapper-date">
+                    <input type="text" placeholder="Дата выезда">
+                    <div class="invalid-feedback">
+                        <p>Не должно быть пустое</p>
+                    </div>
+                </div>
+                <div class="input-wrapper input-wrapper-date">
+                    <input type="text" placeholder="Время выезда">
+                    <div class="invalid-feedback">
+                        <p>Не должно быть пустое</p>
+                    </div>
+                </div>
             </div>
             <div class="visit-order-agreement phone-bottom">
                 <input type="checkbox" id="agreement">
                 <label for="agreement">Я даю согласие на обработку персональных данных</label>
             </div>
+            <div class="visit-agreement-invalid-feedback invalid-feedback">
+                <p>Должно быть выбрано</p>
+            </div>
             <button class="btn-green">ЗАКАЗАТЬ УСЛУГУ</button>
         </div>
+
         <img src="images/visithome.png">
     </div>
 
@@ -156,7 +181,9 @@
 
     <div class="test-right container">
         <h1>Как правильно подготовиться к сдаче анализов</h1>
-        <span>Правила подготовки отличаются для разных лабораторных исследований и типа биоматериала. Заранее уточните у лечащего врача или специалиста лаборатории условия, которые необходимо соблюдать для получения достоверных результатов.</span>
+        <span>Правила подготовки отличаются для разных лабораторных исследований и типа биоматериала. Заранее уточните у
+            лечащего врача или специалиста лаборатории условия, которые необходимо соблюдать для получения достоверных
+            результатов.</span>
         <div class="test-right-block">
             <div>
                 <img src="images/draft.png">
@@ -202,6 +229,7 @@
     </footer>
 
     <script src="scripts/burger.js"></script>
+    <script src="scripts/visit.js"></script>
 </body>
 
 </html>

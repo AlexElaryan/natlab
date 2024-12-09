@@ -1,0 +1,441 @@
+/* 
+    1. .rec-item Поменял высоту на fit-content. 
+    2. Удалите из style.css .rec-item h3 и .rec-item span все стили, которые в media написаны. 
+    3. В скрипте JS поменял в Swiper 4 брейкпоинта: 655 на 795, spaceBetween: 20,. 
+    4. И еще удалил функцию, которая считает высоты, то есть остался только первый DOMContentLoaded, в котором Swiper-и.
+    5. contact.js
+*/
+
+.swiper4,
+.swiper5 {
+    padding-bottom: 10px;
+}
+
+.rec-item h3 {
+    font-size: 20px;
+}
+
+.swiper5 .rec-item h3 {
+    height: fit-content;
+}
+
+.swiper5 .rec-item span {
+    height: 8ch;
+}
+
+.agreement-is-invalid input {
+    border: 1px solid red;
+}
+
+.agreement-is-invalid label {
+    color: red;
+}
+
+.tests-block {
+    min-height: 260px;
+}
+
+@media screen and (max-width:860px) {
+    .recommendations-item-btn-grn {
+        padding: 5px 10px;
+    }
+}
+
+/* article start */
+
+.article-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+}
+
+.article-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-item {
+    width: fit-content;
+}
+
+.article-item span {
+    max-width: 330px;
+}
+
+.article-item>img {
+    max-width: 360px;
+}
+
+.articlePagination .pagination-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: rgba(226, 223, 223, 1);
+    padding: 5px;
+    transition: .25s;
+    border: none;
+    font-size: 24px;
+    color: rgba(19, 101, 1, 1);
+    cursor: pointer;
+}
+
+.articlePagination .activeArticlePagination,
+.articlePagination .pagination-btn:hover {
+    background: rgba(19, 101, 1, 1);
+    color: #fff;
+}
+
+.article-swiper-control {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.article-swiper-control svg {
+    width: 100%;
+    height: 100%;
+}
+
+.article-swiper-control svg path {
+    fill: #E2DFDF;
+    transition: .25s;
+}
+
+.article-swiper-control:hover svg path {
+    fill: #136501;
+}
+
+.article-pagination-block {
+    margin-top: 100px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.articlePagination {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.article {
+    padding-bottom: 100px;
+}
+
+.article-item .rec-item-bottom h3 {
+    height: 6.5ch;
+}
+
+@media screen and (max-width:1447px) {
+    .article-box {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .article-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .article {
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+
+    .article-pagination-block {
+        margin-top: 50px;
+    }
+
+    .article-box {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .article-item>img {
+        max-width: 100%;
+    }
+    .articlePagination .pagination-btn {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .article-swiper-control {
+        width: 30px;
+        height: 30px;
+    }
+
+    .article-pagination-block,
+    .articlePagination {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/* article end */
+
+/* urgent test start */
+
+.urgent-test {
+    padding-top: 90px;
+}
+
+.urgent-test h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.urgent-test .biocomplex-left {
+    width: 50%;
+}
+
+.urgent-test .biocomplex-block {
+    justify-content: space-between;
+}
+
+@media screen and (max-width:840px) {
+    .urgent-test {
+        padding-top: 20px;
+    }
+
+    .urgent-test .biocomplex-left {
+        width: 70%;
+    }
+
+}
+
+/* urgent test end */
+
+
+/* prepare-test start */
+
+
+.prepare-test .biocomplex-block {
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+
+.prepare-test .biocomplex-left {
+    max-width: 80%;
+    gap: 20px;
+}
+
+.prepare-test .biocomplex-block>img {
+    max-width: 900px;
+    max-height: 400px;
+    margin-top: 0;
+}
+
+.prepare-test.biochemical-complex h3 {
+    margin-top: 20px;
+}
+
+.prepare-test.biochemical-complex span:last-of-type {
+    margin-top: 30px;
+}
+
+@media screen and (max-width:840px) {
+    .prepare-test .biocomplex-block>img {
+        width: 100%;
+        max-width: 100%;
+        max-height: fit-content;
+        display: block;
+    }
+
+    .prepare-test .biocomplex-left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .prepare-test.biochemical-complex span:first-of-type {
+        display: none;
+    }
+
+    .prepare-test.biochemical-complex h3 {
+        font-size: 14px;
+    }
+
+    .prepare-test.biochemical-complex ul li {
+        font-size: 12px;
+    }
+
+    .prepare-test .biocomplex-block {
+        gap: 20px;
+    }
+
+}
+
+/* prepare-test end */
+
+
+/* -----------------------------1111----------------------------------- */
+
+.home-swiper-slide {
+    height: 584px;
+}
+
+.swiper5 .home-comments span {
+    height: fit-content;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+}
+
+.test-item>h3 {
+    overflow: hidden;
+    height: 5.7ch;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+}
+
+.complex-research .test-item {
+    height: 100%;
+}
+
+/* ----------------------------1111------------------------------------ */
+
+/* ----------------------------2222------------------------------------ */
+
+
+/* comments start */
+
+@media screen and (max-width:840px) {
+    .comments-block {
+        justify-content: start;
+    }
+}
+
+/* comments end */
+
+.invalid-feedback p {
+    margin-top: -20px;
+}
+
+.send-comment textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.send-comment-block>div {
+    gap: 15x;
+}
+
+.send-comment-block>div:last-of-type {
+    gap: 10px;
+}
+
+input.is-invalid {
+    margin-bottom: -20px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-wrapper .invalid-feedback {
+    position: absolute;
+    bottom: -20px;
+    margin: unset !important;
+}
+
+.invalid-feedback p {
+    font-size: 14px;
+}
+
+.notFilledCommentsInfo .invalid-feedback {
+    display: flex;
+}
+
+.notFilledCommentsInfo .invalid-feedback p {
+    margin-top: 10px;
+}
+
+.send-comment .input-wrapper::after {
+    display: none;
+}
+
+.phone .invalid-feedback p {
+    margin-top: -10px;
+}
+
+.phone .comment-agreement-invalid-feedback p {
+    margin: auto;
+    margin-top: -30px;
+}
+
+.phone-input {
+    position: relative;
+    height: 90px;
+    padding-bottom: 30px;
+}
+
+.phone-input .invalid-feedback {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.phone-input input.is-invalid {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width:950px) {
+    .phone-input {
+        height: fit-content;
+        padding-bottom: 0px;
+    }
+
+    .phone-input .invalid-feedback {
+        position: unset;
+    }
+}
+
+
+.visit-agreement-invalid-feedback {
+    margin-top: -10px;
+    justify-content: center;
+}
+
+.input-wrapper.notFilled .invalid-feedback {
+    display: flex;
+}
+
+.input-wrapper.notFilled .invalid-feedback p {
+    margin-top: 5px;
+}
+
+.input-wrapper-date::after {
+    display: none;
+}
+
+.visit_order-service-left {
+    width: 100%;
+    min-height: fit-content;
+}
+
+.visit_order-service-left>.visit-item {
+    width: 100%;
+}
+
+.visit_order-service {
+    max-height: unset;
+}
+
+.visit_order-service>img {
+    height: 100%;
+}
+
+/* ----------------------------2222------------------------------------ */
+
+
